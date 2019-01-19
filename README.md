@@ -64,5 +64,5 @@ brew install minicom openocd
 
 8. Add GNU ARM Embedded Toolchain to PATH
 ```sh
-export PATH="$HOME/mike/dev/gcc-arm-none-eabi-8-2018-q4-major/bin:$PATH"
+export PATH="$HOME/<path to element>/gcc-arm-none-eabi-8-2018-q4-major/bin:$PATH"
 ```
