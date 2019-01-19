@@ -39,31 +39,30 @@ rustup component add llvm-tools-preview
 cargo install cargo-binutils --vers 0.1.4
 ```
 
+4. Add Rust toolchain for Discovery Board
+```sh
+rustup target add thumbv7em-none-eabihf
+```
+
+5. Add Rust toolchain for Blue Pill
+```sh
+rustup target add thumbv7m-none-eabi
+```
 ----
 [Linux](https://docs.rust-embedded.org/discovery/03-setup/linux.html)
 
 **Macos**
 vvvv
 
-4. Install debug tools
+6. Install debug tools
 ```
 brew install minicom openocd
 ```
-5. Download GNU ARM Embedded Toolchain
+7. Download GNU ARM Embedded Toolchain
 
 [Link for macos](https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2018q4/gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2?revision=1041bf49-06d4-4174-866f-0e5259fa9d8d?product=GNU%20Arm%20Embedded%20Toolchain,64-bit,,Mac%20OS%20X,8-2018-q4-major)
 
-6. Add GNU ARM Embedded Toolchain to PATH
+8. Add GNU ARM Embedded Toolchain to PATH
 ```sh
 export PATH="$HOME/mike/dev/gcc-arm-none-eabi-8-2018-q4-major/bin:$PATH"
-```
-
-7. Add Rust toolchain for Discovery Board
-```sh
-rustup target add thumbv7em-none-eabihf
-```
-
-8. Add Rust toolchain for Blue Pill
-```sh
-rustup target add thumbv7m-none-eabi
 ```
